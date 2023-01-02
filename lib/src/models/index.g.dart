@@ -19,12 +19,14 @@ Map<String, dynamic> _$$Torrent$ToJson(_$Torrent$ instance) => <String, dynamic>
     };
 
 _$AppState$ _$$AppState$FromJson(Map<String, dynamic> json) => _$AppState$(
-      displayNews:
-          (json['displayNews'] as List<dynamic>?)?.map((dynamic e) => News.fromJson(e as Map<String, dynamic>)).toList() ??
-              const <News>[],
-      inMemoryNews:
-          (json['inMemoryNews'] as List<dynamic>?)?.map((dynamic e) => News.fromJson(e as Map<String, dynamic>)).toList() ??
-              const <News>[],
+      displayNews: (json['displayNews'] as List<dynamic>?)
+              ?.map((dynamic e) => News.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const <News>[],
+      inMemoryNews: (json['inMemoryNews'] as List<dynamic>?)
+              ?.map((dynamic e) => News.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const <News>[],
       selectedNews: json['selectedNews'] == null ? null : News.fromJson(json['selectedNews'] as Map<String, dynamic>),
       isLoading: json['isLoading'] as bool? ?? true,
       offset: json['offset'] as int? ?? 0,
