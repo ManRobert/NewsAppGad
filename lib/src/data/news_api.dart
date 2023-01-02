@@ -23,7 +23,7 @@ class NewsApi {
   }) async {
     final Response response = await _client.get(
       Uri.parse(
-        '$apiAccessKey&languages=$languages'
+        '$apiUrlAndAccessKey&languages=$languages'
         '&categories=$categories'
         '&sources=$sources'
         '&countries=$countries'

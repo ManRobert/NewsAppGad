@@ -12,25 +12,20 @@ _$Torrent$ _$$Torrent$FromJson(Map<String, dynamic> json) => _$Torrent$(
       size: json['size'] as String,
     );
 
-Map<String, dynamic> _$$Torrent$ToJson(_$Torrent$ instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$Torrent$ToJson(_$Torrent$ instance) => <String, dynamic>{
       'url': instance.url,
       'quality': instance.quality,
       'size': instance.size,
     };
 
 _$AppState$ _$$AppState$FromJson(Map<String, dynamic> json) => _$AppState$(
-      displayNews: (json['displayNews'] as List<dynamic>?)
-              ?.map((e) => News.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const <News>[],
-      inMemoryNews: (json['inMemoryNews'] as List<dynamic>?)
-              ?.map((e) => News.fromJson(e as Map<String, dynamic>))
-              .toList() ??
-          const <News>[],
-      selectedNews: json['selectedNews'] == null
-          ? null
-          : News.fromJson(json['selectedNews'] as Map<String, dynamic>),
+      displayNews:
+          (json['displayNews'] as List<dynamic>?)?.map((dynamic e) => News.fromJson(e as Map<String, dynamic>)).toList() ??
+              const <News>[],
+      inMemoryNews:
+          (json['inMemoryNews'] as List<dynamic>?)?.map((dynamic e) => News.fromJson(e as Map<String, dynamic>)).toList() ??
+              const <News>[],
+      selectedNews: json['selectedNews'] == null ? null : News.fromJson(json['selectedNews'] as Map<String, dynamic>),
       isLoading: json['isLoading'] as bool? ?? true,
       offset: json['offset'] as int? ?? 0,
       languages: json['languages'] as String? ?? '',
@@ -40,8 +35,7 @@ _$AppState$ _$$AppState$FromJson(Map<String, dynamic> json) => _$AppState$(
       wantRefresh: json['wantRefresh'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$AppState$ToJson(_$AppState$ instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$AppState$ToJson(_$AppState$ instance) => <String, dynamic>{
       'displayNews': instance.displayNews,
       'inMemoryNews': instance.inMemoryNews,
       'selectedNews': instance.selectedNews,

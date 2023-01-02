@@ -19,36 +19,31 @@ mixin _$WantRefresh {}
 
 /// @nodoc
 abstract class $WantRefreshCopyWith<$Res> {
-  factory $WantRefreshCopyWith(
-          WantRefresh value, $Res Function(WantRefresh) then) =
+  factory $WantRefreshCopyWith(WantRefresh value, $Res Function(WantRefresh) then) =
       _$WantRefreshCopyWithImpl<$Res, WantRefresh>;
 }
 
 /// @nodoc
-class _$WantRefreshCopyWithImpl<$Res, $Val extends WantRefresh>
-    implements $WantRefreshCopyWith<$Res> {
+class _$WantRefreshCopyWithImpl<$Res, $Val extends WantRefresh> implements $WantRefreshCopyWith<$Res> {
   _$WantRefreshCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
 
 /// @nodoc
 abstract class _$$WantRefresh$CopyWith<$Res> {
-  factory _$$WantRefresh$CopyWith(
-          _$WantRefresh$ value, $Res Function(_$WantRefresh$) then) =
+  factory _$$WantRefresh$CopyWith(_$WantRefresh$ value, $Res Function(_$WantRefresh$) then) =
       __$$WantRefresh$CopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$WantRefresh$CopyWithImpl<$Res>
-    extends _$WantRefreshCopyWithImpl<$Res, _$WantRefresh$>
+class __$$WantRefresh$CopyWithImpl<$Res> extends _$WantRefreshCopyWithImpl<$Res, _$WantRefresh$>
     implements _$$WantRefresh$CopyWith<$Res> {
-  __$$WantRefresh$CopyWithImpl(
-      _$WantRefresh$ _value, $Res Function(_$WantRefresh$) _then)
-      : super(_value, _then);
+  __$$WantRefresh$CopyWithImpl(_$WantRefresh$ _value, $Res Function(_$WantRefresh$) _then) : super(_value, _then);
 }
 
 /// @nodoc
@@ -63,8 +58,7 @@ class _$WantRefresh$ implements WantRefresh$ {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$WantRefresh$);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$WantRefresh$);
   }
 
   @override
@@ -79,32 +73,29 @@ abstract class WantRefresh$ implements WantRefresh {
 mixin _$GetNews {
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function(List<News> news) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function(List<News> news)? successful,
     TResult? Function(Object error, StackTrace stackTrace)? error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function(List<News> news)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult map<TResult extends Object?>(
     TResult Function(GetNewsStart value) $default, {
@@ -112,6 +103,7 @@ mixin _$GetNews {
     required TResult Function(GetNewsError value) error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>(
     TResult? Function(GetNewsStart value)? $default, {
@@ -119,6 +111,7 @@ mixin _$GetNews {
     TResult? Function(GetNewsError value)? error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>(
     TResult Function(GetNewsStart value)? $default, {
@@ -131,42 +124,33 @@ mixin _$GetNews {
 
 /// @nodoc
 abstract class $GetNewsCopyWith<$Res> {
-  factory $GetNewsCopyWith(GetNews value, $Res Function(GetNews) then) =
-      _$GetNewsCopyWithImpl<$Res, GetNews>;
+  factory $GetNewsCopyWith(GetNews value, $Res Function(GetNews) then) = _$GetNewsCopyWithImpl<$Res, GetNews>;
 }
 
 /// @nodoc
-class _$GetNewsCopyWithImpl<$Res, $Val extends GetNews>
-    implements $GetNewsCopyWith<$Res> {
+class _$GetNewsCopyWithImpl<$Res, $Val extends GetNews> implements $GetNewsCopyWith<$Res> {
   _$GetNewsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
 
 /// @nodoc
 abstract class _$$GetNewsStartCopyWith<$Res> {
-  factory _$$GetNewsStartCopyWith(
-          _$GetNewsStart value, $Res Function(_$GetNewsStart) then) =
+  factory _$$GetNewsStartCopyWith(_$GetNewsStart value, $Res Function(_$GetNewsStart) then) =
       __$$GetNewsStartCopyWithImpl<$Res>;
+
   @useResult
-  $Res call(
-      {int offset,
-      String languages,
-      String categories,
-      String sources,
-      String countries});
+  $Res call({int offset, String languages, String categories, String sources, String countries});
 }
 
 /// @nodoc
-class __$$GetNewsStartCopyWithImpl<$Res>
-    extends _$GetNewsCopyWithImpl<$Res, _$GetNewsStart>
+class __$$GetNewsStartCopyWithImpl<$Res> extends _$GetNewsCopyWithImpl<$Res, _$GetNewsStart>
     implements _$$GetNewsStartCopyWith<$Res> {
-  __$$GetNewsStartCopyWithImpl(
-      _$GetNewsStart _value, $Res Function(_$GetNewsStart) _then)
-      : super(_value, _then);
+  __$$GetNewsStartCopyWithImpl(_$GetNewsStart _value, $Res Function(_$GetNewsStart) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -234,18 +218,14 @@ class _$GetNewsStart implements GetNewsStart {
         (other.runtimeType == runtimeType &&
             other is _$GetNewsStart &&
             (identical(other.offset, offset) || other.offset == offset) &&
-            (identical(other.languages, languages) ||
-                other.languages == languages) &&
-            (identical(other.categories, categories) ||
-                other.categories == categories) &&
+            (identical(other.languages, languages) || other.languages == languages) &&
+            (identical(other.categories, categories) || other.categories == categories) &&
             (identical(other.sources, sources) || other.sources == sources) &&
-            (identical(other.countries, countries) ||
-                other.countries == countries));
+            (identical(other.countries, countries) || other.countries == countries));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, offset, languages, categories, sources, countries);
+  int get hashCode => Object.hash(runtimeType, offset, languages, categories, sources, countries);
 
   @JsonKey(ignore: true)
   @override
@@ -256,9 +236,7 @@ class _$GetNewsStart implements GetNewsStart {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function(List<News> news) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) {
@@ -268,9 +246,7 @@ class _$GetNewsStart implements GetNewsStart {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function(List<News> news)? successful,
     TResult? Function(Object error, StackTrace stackTrace)? error,
   }) {
@@ -280,9 +256,7 @@ class _$GetNewsStart implements GetNewsStart {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function(List<News> news)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -337,30 +311,32 @@ abstract class GetNewsStart implements GetNews {
       required final String countries}) = _$GetNewsStart;
 
   int get offset;
+
   String get languages;
+
   String get categories;
+
   String get sources;
+
   String get countries;
+
   @JsonKey(ignore: true)
-  _$$GetNewsStartCopyWith<_$GetNewsStart> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetNewsStartCopyWith<_$GetNewsStart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetNewsSuccessfulCopyWith<$Res> {
-  factory _$$GetNewsSuccessfulCopyWith(
-          _$GetNewsSuccessful value, $Res Function(_$GetNewsSuccessful) then) =
+  factory _$$GetNewsSuccessfulCopyWith(_$GetNewsSuccessful value, $Res Function(_$GetNewsSuccessful) then) =
       __$$GetNewsSuccessfulCopyWithImpl<$Res>;
+
   @useResult
   $Res call({List<News> news});
 }
 
 /// @nodoc
-class __$$GetNewsSuccessfulCopyWithImpl<$Res>
-    extends _$GetNewsCopyWithImpl<$Res, _$GetNewsSuccessful>
+class __$$GetNewsSuccessfulCopyWithImpl<$Res> extends _$GetNewsCopyWithImpl<$Res, _$GetNewsSuccessful>
     implements _$$GetNewsSuccessfulCopyWith<$Res> {
-  __$$GetNewsSuccessfulCopyWithImpl(
-      _$GetNewsSuccessful _value, $Res Function(_$GetNewsSuccessful) _then)
+  __$$GetNewsSuccessfulCopyWithImpl(_$GetNewsSuccessful _value, $Res Function(_$GetNewsSuccessful) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -383,6 +359,7 @@ class _$GetNewsSuccessful implements GetNewsSuccessful {
   const _$GetNewsSuccessful(final List<News> news) : _news = news;
 
   final List<News> _news;
+
   @override
   List<News> get news {
     if (_news is EqualUnmodifiableListView) return _news;
@@ -404,8 +381,7 @@ class _$GetNewsSuccessful implements GetNewsSuccessful {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_news));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_news));
 
   @JsonKey(ignore: true)
   @override
@@ -416,9 +392,7 @@ class _$GetNewsSuccessful implements GetNewsSuccessful {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function(List<News> news) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) {
@@ -428,9 +402,7 @@ class _$GetNewsSuccessful implements GetNewsSuccessful {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function(List<News> news)? successful,
     TResult? Function(Object error, StackTrace stackTrace)? error,
   }) {
@@ -440,9 +412,7 @@ class _$GetNewsSuccessful implements GetNewsSuccessful {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function(List<News> news)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -492,27 +462,24 @@ abstract class GetNewsSuccessful implements GetNews {
   const factory GetNewsSuccessful(final List<News> news) = _$GetNewsSuccessful;
 
   List<News> get news;
+
   @JsonKey(ignore: true)
-  _$$GetNewsSuccessfulCopyWith<_$GetNewsSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetNewsSuccessfulCopyWith<_$GetNewsSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetNewsErrorCopyWith<$Res> {
-  factory _$$GetNewsErrorCopyWith(
-          _$GetNewsError value, $Res Function(_$GetNewsError) then) =
+  factory _$$GetNewsErrorCopyWith(_$GetNewsError value, $Res Function(_$GetNewsError) then) =
       __$$GetNewsErrorCopyWithImpl<$Res>;
+
   @useResult
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class __$$GetNewsErrorCopyWithImpl<$Res>
-    extends _$GetNewsCopyWithImpl<$Res, _$GetNewsError>
+class __$$GetNewsErrorCopyWithImpl<$Res> extends _$GetNewsCopyWithImpl<$Res, _$GetNewsError>
     implements _$$GetNewsErrorCopyWith<$Res> {
-  __$$GetNewsErrorCopyWithImpl(
-      _$GetNewsError _value, $Res Function(_$GetNewsError) _then)
-      : super(_value, _then);
+  __$$GetNewsErrorCopyWithImpl(_$GetNewsError _value, $Res Function(_$GetNewsError) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -551,13 +518,11 @@ class _$GetNewsError implements GetNewsError {
         (other.runtimeType == runtimeType &&
             other is _$GetNewsError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
@@ -568,9 +533,7 @@ class _$GetNewsError implements GetNewsError {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function(List<News> news) successful,
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) {
@@ -580,9 +543,7 @@ class _$GetNewsError implements GetNewsError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function(List<News> news)? successful,
     TResult? Function(Object error, StackTrace stackTrace)? error,
   }) {
@@ -592,9 +553,7 @@ class _$GetNewsError implements GetNewsError {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function(List<News> news)? successful,
     TResult Function(Object error, StackTrace stackTrace)? error,
     required TResult orElse(),
@@ -641,14 +600,14 @@ class _$GetNewsError implements GetNewsError {
 }
 
 abstract class GetNewsError implements GetNews {
-  const factory GetNewsError(final Object error, final StackTrace stackTrace) =
-      _$GetNewsError;
+  const factory GetNewsError(final Object error, final StackTrace stackTrace) = _$GetNewsError;
 
   Object get error;
+
   StackTrace get stackTrace;
+
   @JsonKey(ignore: true)
-  _$$GetNewsErrorCopyWith<_$GetNewsError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetNewsErrorCopyWith<_$GetNewsError> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -656,15 +615,14 @@ mixin _$SetSelectedNews {
   News get news => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SetSelectedNewsCopyWith<SetSelectedNews> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SetSelectedNewsCopyWith<SetSelectedNews> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SetSelectedNewsCopyWith<$Res> {
-  factory $SetSelectedNewsCopyWith(
-          SetSelectedNews value, $Res Function(SetSelectedNews) then) =
+  factory $SetSelectedNewsCopyWith(SetSelectedNews value, $Res Function(SetSelectedNews) then) =
       _$SetSelectedNewsCopyWithImpl<$Res, SetSelectedNews>;
+
   @useResult
   $Res call({News news});
 
@@ -672,12 +630,12 @@ abstract class $SetSelectedNewsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SetSelectedNewsCopyWithImpl<$Res, $Val extends SetSelectedNews>
-    implements $SetSelectedNewsCopyWith<$Res> {
+class _$SetSelectedNewsCopyWithImpl<$Res, $Val extends SetSelectedNews> implements $SetSelectedNewsCopyWith<$Res> {
   _$SetSelectedNewsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -704,11 +662,10 @@ class _$SetSelectedNewsCopyWithImpl<$Res, $Val extends SetSelectedNews>
 }
 
 /// @nodoc
-abstract class _$$SetSelectedNews$CopyWith<$Res>
-    implements $SetSelectedNewsCopyWith<$Res> {
-  factory _$$SetSelectedNews$CopyWith(
-          _$SetSelectedNews$ value, $Res Function(_$SetSelectedNews$) then) =
+abstract class _$$SetSelectedNews$CopyWith<$Res> implements $SetSelectedNewsCopyWith<$Res> {
+  factory _$$SetSelectedNews$CopyWith(_$SetSelectedNews$ value, $Res Function(_$SetSelectedNews$) then) =
       __$$SetSelectedNews$CopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call({News news});
@@ -718,11 +675,9 @@ abstract class _$$SetSelectedNews$CopyWith<$Res>
 }
 
 /// @nodoc
-class __$$SetSelectedNews$CopyWithImpl<$Res>
-    extends _$SetSelectedNewsCopyWithImpl<$Res, _$SetSelectedNews$>
+class __$$SetSelectedNews$CopyWithImpl<$Res> extends _$SetSelectedNewsCopyWithImpl<$Res, _$SetSelectedNews$>
     implements _$$SetSelectedNews$CopyWith<$Res> {
-  __$$SetSelectedNews$CopyWithImpl(
-      _$SetSelectedNews$ _value, $Res Function(_$SetSelectedNews$) _then)
+  __$$SetSelectedNews$CopyWithImpl(_$SetSelectedNews$ _value, $Res Function(_$SetSelectedNews$) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -775,66 +730,45 @@ abstract class SetSelectedNews$ implements SetSelectedNews {
 
   @override
   News get news;
+
   @override
   @JsonKey(ignore: true)
-  _$$SetSelectedNews$CopyWith<_$SetSelectedNews$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SetSelectedNews$CopyWith<_$SetSelectedNews$> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 mixin _$ChangeFilters {
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function() successful,
-    required TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)
+    required TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)
         error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function()? successful,
-    TResult? Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult? Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function()? successful,
-    TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult map<TResult extends Object?>(
     TResult Function(ChangeFiltersStart value) $default, {
@@ -842,6 +776,7 @@ mixin _$ChangeFilters {
     required TResult Function(ChangeFiltersError value) error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>(
     TResult? Function(ChangeFiltersStart value)? $default, {
@@ -849,6 +784,7 @@ mixin _$ChangeFilters {
     TResult? Function(ChangeFiltersError value)? error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>(
     TResult Function(ChangeFiltersStart value)? $default, {
@@ -861,42 +797,34 @@ mixin _$ChangeFilters {
 
 /// @nodoc
 abstract class $ChangeFiltersCopyWith<$Res> {
-  factory $ChangeFiltersCopyWith(
-          ChangeFilters value, $Res Function(ChangeFilters) then) =
+  factory $ChangeFiltersCopyWith(ChangeFilters value, $Res Function(ChangeFilters) then) =
       _$ChangeFiltersCopyWithImpl<$Res, ChangeFilters>;
 }
 
 /// @nodoc
-class _$ChangeFiltersCopyWithImpl<$Res, $Val extends ChangeFilters>
-    implements $ChangeFiltersCopyWith<$Res> {
+class _$ChangeFiltersCopyWithImpl<$Res, $Val extends ChangeFilters> implements $ChangeFiltersCopyWith<$Res> {
   _$ChangeFiltersCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
 
 /// @nodoc
 abstract class _$$ChangeFiltersStartCopyWith<$Res> {
-  factory _$$ChangeFiltersStartCopyWith(_$ChangeFiltersStart value,
-          $Res Function(_$ChangeFiltersStart) then) =
+  factory _$$ChangeFiltersStartCopyWith(_$ChangeFiltersStart value, $Res Function(_$ChangeFiltersStart) then) =
       __$$ChangeFiltersStartCopyWithImpl<$Res>;
+
   @useResult
-  $Res call(
-      {int offset,
-      String languages,
-      String categories,
-      String sources,
-      String countries});
+  $Res call({int offset, String languages, String categories, String sources, String countries});
 }
 
 /// @nodoc
-class __$$ChangeFiltersStartCopyWithImpl<$Res>
-    extends _$ChangeFiltersCopyWithImpl<$Res, _$ChangeFiltersStart>
+class __$$ChangeFiltersStartCopyWithImpl<$Res> extends _$ChangeFiltersCopyWithImpl<$Res, _$ChangeFiltersStart>
     implements _$$ChangeFiltersStartCopyWith<$Res> {
-  __$$ChangeFiltersStartCopyWithImpl(
-      _$ChangeFiltersStart _value, $Res Function(_$ChangeFiltersStart) _then)
+  __$$ChangeFiltersStartCopyWithImpl(_$ChangeFiltersStart _value, $Res Function(_$ChangeFiltersStart) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -965,41 +893,28 @@ class _$ChangeFiltersStart implements ChangeFiltersStart {
         (other.runtimeType == runtimeType &&
             other is _$ChangeFiltersStart &&
             (identical(other.offset, offset) || other.offset == offset) &&
-            (identical(other.languages, languages) ||
-                other.languages == languages) &&
-            (identical(other.categories, categories) ||
-                other.categories == categories) &&
+            (identical(other.languages, languages) || other.languages == languages) &&
+            (identical(other.categories, categories) || other.categories == categories) &&
             (identical(other.sources, sources) || other.sources == sources) &&
-            (identical(other.countries, countries) ||
-                other.countries == countries));
+            (identical(other.countries, countries) || other.countries == countries));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, offset, languages, categories, sources, countries);
+  int get hashCode => Object.hash(runtimeType, offset, languages, categories, sources, countries);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ChangeFiltersStartCopyWith<_$ChangeFiltersStart> get copyWith =>
-      __$$ChangeFiltersStartCopyWithImpl<_$ChangeFiltersStart>(
-          this, _$identity);
+      __$$ChangeFiltersStartCopyWithImpl<_$ChangeFiltersStart>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function() successful,
-    required TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)
+    required TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)
         error,
   }) {
     return $default(offset, languages, categories, sources, countries);
@@ -1008,18 +923,10 @@ class _$ChangeFiltersStart implements ChangeFiltersStart {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function()? successful,
-    TResult? Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult? Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
   }) {
     return $default?.call(offset, languages, categories, sources, countries);
@@ -1028,18 +935,10 @@ class _$ChangeFiltersStart implements ChangeFiltersStart {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function()? successful,
-    TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
     required TResult orElse(),
   }) {
@@ -1093,28 +992,31 @@ abstract class ChangeFiltersStart implements ChangeFilters {
       required final String countries}) = _$ChangeFiltersStart;
 
   int get offset;
+
   String get languages;
+
   String get categories;
+
   String get sources;
+
   String get countries;
+
   @JsonKey(ignore: true)
-  _$$ChangeFiltersStartCopyWith<_$ChangeFiltersStart> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ChangeFiltersStartCopyWith<_$ChangeFiltersStart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$ChangeFiltersSuccessfulCopyWith<$Res> {
-  factory _$$ChangeFiltersSuccessfulCopyWith(_$ChangeFiltersSuccessful value,
-          $Res Function(_$ChangeFiltersSuccessful) then) =
+  factory _$$ChangeFiltersSuccessfulCopyWith(
+          _$ChangeFiltersSuccessful value, $Res Function(_$ChangeFiltersSuccessful) then) =
       __$$ChangeFiltersSuccessfulCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ChangeFiltersSuccessfulCopyWithImpl<$Res>
-    extends _$ChangeFiltersCopyWithImpl<$Res, _$ChangeFiltersSuccessful>
+class __$$ChangeFiltersSuccessfulCopyWithImpl<$Res> extends _$ChangeFiltersCopyWithImpl<$Res, _$ChangeFiltersSuccessful>
     implements _$$ChangeFiltersSuccessfulCopyWith<$Res> {
-  __$$ChangeFiltersSuccessfulCopyWithImpl(_$ChangeFiltersSuccessful _value,
-      $Res Function(_$ChangeFiltersSuccessful) _then)
+  __$$ChangeFiltersSuccessfulCopyWithImpl(
+      _$ChangeFiltersSuccessful _value, $Res Function(_$ChangeFiltersSuccessful) _then)
       : super(_value, _then);
 }
 
@@ -1130,9 +1032,7 @@ class _$ChangeFiltersSuccessful implements ChangeFiltersSuccessful {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ChangeFiltersSuccessful);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$ChangeFiltersSuccessful);
   }
 
   @override
@@ -1141,18 +1041,10 @@ class _$ChangeFiltersSuccessful implements ChangeFiltersSuccessful {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function() successful,
-    required TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)
+    required TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)
         error,
   }) {
     return successful();
@@ -1161,18 +1053,10 @@ class _$ChangeFiltersSuccessful implements ChangeFiltersSuccessful {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function()? successful,
-    TResult? Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult? Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
   }) {
     return successful?.call();
@@ -1181,18 +1065,10 @@ class _$ChangeFiltersSuccessful implements ChangeFiltersSuccessful {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function()? successful,
-    TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
     required TResult orElse(),
   }) {
@@ -1243,9 +1119,9 @@ abstract class ChangeFiltersSuccessful implements ChangeFilters {
 
 /// @nodoc
 abstract class _$$ChangeFiltersErrorCopyWith<$Res> {
-  factory _$$ChangeFiltersErrorCopyWith(_$ChangeFiltersError value,
-          $Res Function(_$ChangeFiltersError) then) =
+  factory _$$ChangeFiltersErrorCopyWith(_$ChangeFiltersError value, $Res Function(_$ChangeFiltersError) then) =
       __$$ChangeFiltersErrorCopyWithImpl<$Res>;
+
   @useResult
   $Res call(
       {Object error,
@@ -1258,11 +1134,9 @@ abstract class _$$ChangeFiltersErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ChangeFiltersErrorCopyWithImpl<$Res>
-    extends _$ChangeFiltersCopyWithImpl<$Res, _$ChangeFiltersError>
+class __$$ChangeFiltersErrorCopyWithImpl<$Res> extends _$ChangeFiltersCopyWithImpl<$Res, _$ChangeFiltersError>
     implements _$$ChangeFiltersErrorCopyWith<$Res> {
-  __$$ChangeFiltersErrorCopyWithImpl(
-      _$ChangeFiltersError _value, $Res Function(_$ChangeFiltersError) _then)
+  __$$ChangeFiltersErrorCopyWithImpl(_$ChangeFiltersError _value, $Res Function(_$ChangeFiltersError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1342,99 +1216,60 @@ class _$ChangeFiltersError implements ChangeFiltersError {
         (other.runtimeType == runtimeType &&
             other is _$ChangeFiltersError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace) &&
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace) &&
             (identical(other.offset, offset) || other.offset == offset) &&
-            (identical(other.languages, languages) ||
-                other.languages == languages) &&
-            (identical(other.categories, categories) ||
-                other.categories == categories) &&
+            (identical(other.languages, languages) || other.languages == languages) &&
+            (identical(other.categories, categories) || other.categories == categories) &&
             (identical(other.sources, sources) || other.sources == sources) &&
-            (identical(other.countries, countries) ||
-                other.countries == countries));
+            (identical(other.countries, countries) || other.countries == countries));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(error),
-      stackTrace,
-      offset,
-      languages,
-      categories,
-      sources,
-      countries);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace, offset,
+      languages, categories, sources, countries);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ChangeFiltersErrorCopyWith<_$ChangeFiltersError> get copyWith =>
-      __$$ChangeFiltersErrorCopyWithImpl<_$ChangeFiltersError>(
-          this, _$identity);
+      __$$ChangeFiltersErrorCopyWithImpl<_$ChangeFiltersError>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries) $default, {
     required TResult Function() successful,
-    required TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)
+    required TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)
         error,
   }) {
-    return error(this.error, stackTrace, offset, languages, categories, sources,
-        countries);
+    return error(this.error, stackTrace, offset, languages, categories, sources, countries);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult? Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult? Function()? successful,
-    TResult? Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult? Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
   }) {
-    return error?.call(this.error, stackTrace, offset, languages, categories,
-        sources, countries);
+    return error?.call(this.error, stackTrace, offset, languages, categories, sources, countries);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
-    TResult Function(int offset, String languages, String categories,
-            String sources, String countries)?
-        $default, {
+    TResult Function(int offset, String languages, String categories, String sources, String countries)? $default, {
     TResult Function()? successful,
-    TResult Function(
-            Object error,
-            StackTrace stackTrace,
-            int offset,
-            String languages,
-            String categories,
-            String sources,
-            String countries)?
+    TResult Function(Object error, StackTrace stackTrace, int offset, String languages, String categories,
+            String sources, String countries)?
         error,
     required TResult orElse(),
   }) {
     if (error != null) {
-      return error(this.error, stackTrace, offset, languages, categories,
-          sources, countries);
+      return error(this.error, stackTrace, offset, languages, categories, sources, countries);
     }
     return orElse();
   }
@@ -1475,8 +1310,7 @@ class _$ChangeFiltersError implements ChangeFiltersError {
 }
 
 abstract class ChangeFiltersError implements ChangeFilters {
-  const factory ChangeFiltersError(
-      final Object error, final StackTrace stackTrace,
+  const factory ChangeFiltersError(final Object error, final StackTrace stackTrace,
       {required final int offset,
       required final String languages,
       required final String categories,
@@ -1484,15 +1318,21 @@ abstract class ChangeFiltersError implements ChangeFilters {
       required final String countries}) = _$ChangeFiltersError;
 
   Object get error;
+
   StackTrace get stackTrace;
+
   int get offset;
+
   String get languages;
+
   String get categories;
+
   String get sources;
+
   String get countries;
+
   @JsonKey(ignore: true)
-  _$$ChangeFiltersErrorCopyWith<_$ChangeFiltersError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ChangeFiltersErrorCopyWith<_$ChangeFiltersError> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -1504,6 +1344,7 @@ mixin _$SearchNews {
     required TResult Function(Object error, StackTrace stackTrace) error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>(
     TResult? Function(String text, List<News> list)? $default, {
@@ -1511,6 +1352,7 @@ mixin _$SearchNews {
     TResult? Function(Object error, StackTrace stackTrace)? error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>(
     TResult Function(String text, List<News> list)? $default, {
@@ -1519,6 +1361,7 @@ mixin _$SearchNews {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult map<TResult extends Object?>(
     TResult Function(SearchNewsStart value) $default, {
@@ -1526,6 +1369,7 @@ mixin _$SearchNews {
     required TResult Function(SearchNewsError value) error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>(
     TResult? Function(SearchNewsStart value)? $default, {
@@ -1533,6 +1377,7 @@ mixin _$SearchNews {
     TResult? Function(SearchNewsError value)? error,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>(
     TResult Function(SearchNewsStart value)? $default, {
@@ -1545,37 +1390,34 @@ mixin _$SearchNews {
 
 /// @nodoc
 abstract class $SearchNewsCopyWith<$Res> {
-  factory $SearchNewsCopyWith(
-          SearchNews value, $Res Function(SearchNews) then) =
+  factory $SearchNewsCopyWith(SearchNews value, $Res Function(SearchNews) then) =
       _$SearchNewsCopyWithImpl<$Res, SearchNews>;
 }
 
 /// @nodoc
-class _$SearchNewsCopyWithImpl<$Res, $Val extends SearchNews>
-    implements $SearchNewsCopyWith<$Res> {
+class _$SearchNewsCopyWithImpl<$Res, $Val extends SearchNews> implements $SearchNewsCopyWith<$Res> {
   _$SearchNewsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
 
 /// @nodoc
 abstract class _$$SearchNewsStartCopyWith<$Res> {
-  factory _$$SearchNewsStartCopyWith(
-          _$SearchNewsStart value, $Res Function(_$SearchNewsStart) then) =
+  factory _$$SearchNewsStartCopyWith(_$SearchNewsStart value, $Res Function(_$SearchNewsStart) then) =
       __$$SearchNewsStartCopyWithImpl<$Res>;
+
   @useResult
   $Res call({String text, List<News> list});
 }
 
 /// @nodoc
-class __$$SearchNewsStartCopyWithImpl<$Res>
-    extends _$SearchNewsCopyWithImpl<$Res, _$SearchNewsStart>
+class __$$SearchNewsStartCopyWithImpl<$Res> extends _$SearchNewsCopyWithImpl<$Res, _$SearchNewsStart>
     implements _$$SearchNewsStartCopyWith<$Res> {
-  __$$SearchNewsStartCopyWithImpl(
-      _$SearchNewsStart _value, $Res Function(_$SearchNewsStart) _then)
+  __$$SearchNewsStartCopyWithImpl(_$SearchNewsStart _value, $Res Function(_$SearchNewsStart) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1600,12 +1442,12 @@ class __$$SearchNewsStartCopyWithImpl<$Res>
 /// @nodoc
 
 class _$SearchNewsStart implements SearchNewsStart {
-  const _$SearchNewsStart({required this.text, required final List<News> list})
-      : _list = list;
+  const _$SearchNewsStart({required this.text, required final List<News> list}) : _list = list;
 
   @override
   final String text;
   final List<News> _list;
+
   @override
   List<News> get list {
     if (_list is EqualUnmodifiableListView) return _list;
@@ -1628,8 +1470,7 @@ class _$SearchNewsStart implements SearchNewsStart {
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, text, const DeepCollectionEquality().hash(_list));
+  int get hashCode => Object.hash(runtimeType, text, const DeepCollectionEquality().hash(_list));
 
   @JsonKey(ignore: true)
   @override
@@ -1707,32 +1548,29 @@ class _$SearchNewsStart implements SearchNewsStart {
 }
 
 abstract class SearchNewsStart implements SearchNews {
-  const factory SearchNewsStart(
-      {required final String text,
-      required final List<News> list}) = _$SearchNewsStart;
+  const factory SearchNewsStart({required final String text, required final List<News> list}) = _$SearchNewsStart;
 
   String get text;
+
   List<News> get list;
+
   @JsonKey(ignore: true)
-  _$$SearchNewsStartCopyWith<_$SearchNewsStart> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SearchNewsStartCopyWith<_$SearchNewsStart> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$SearchNewsSuccessfulCopyWith<$Res> {
-  factory _$$SearchNewsSuccessfulCopyWith(_$SearchNewsSuccessful value,
-          $Res Function(_$SearchNewsSuccessful) then) =
+  factory _$$SearchNewsSuccessfulCopyWith(_$SearchNewsSuccessful value, $Res Function(_$SearchNewsSuccessful) then) =
       __$$SearchNewsSuccessfulCopyWithImpl<$Res>;
+
   @useResult
   $Res call({List<News> list});
 }
 
 /// @nodoc
-class __$$SearchNewsSuccessfulCopyWithImpl<$Res>
-    extends _$SearchNewsCopyWithImpl<$Res, _$SearchNewsSuccessful>
+class __$$SearchNewsSuccessfulCopyWithImpl<$Res> extends _$SearchNewsCopyWithImpl<$Res, _$SearchNewsSuccessful>
     implements _$$SearchNewsSuccessfulCopyWith<$Res> {
-  __$$SearchNewsSuccessfulCopyWithImpl(_$SearchNewsSuccessful _value,
-      $Res Function(_$SearchNewsSuccessful) _then)
+  __$$SearchNewsSuccessfulCopyWithImpl(_$SearchNewsSuccessful _value, $Res Function(_$SearchNewsSuccessful) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1755,6 +1593,7 @@ class _$SearchNewsSuccessful implements SearchNewsSuccessful {
   const _$SearchNewsSuccessful(final List<News> list) : _list = list;
 
   final List<News> _list;
+
   @override
   List<News> get list {
     if (_list is EqualUnmodifiableListView) return _list;
@@ -1776,15 +1615,13 @@ class _$SearchNewsSuccessful implements SearchNewsSuccessful {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_list));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_list));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SearchNewsSuccessfulCopyWith<_$SearchNewsSuccessful> get copyWith =>
-      __$$SearchNewsSuccessfulCopyWithImpl<_$SearchNewsSuccessful>(
-          this, _$identity);
+      __$$SearchNewsSuccessfulCopyWithImpl<_$SearchNewsSuccessful>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1856,30 +1693,27 @@ class _$SearchNewsSuccessful implements SearchNewsSuccessful {
 }
 
 abstract class SearchNewsSuccessful implements SearchNews {
-  const factory SearchNewsSuccessful(final List<News> list) =
-      _$SearchNewsSuccessful;
+  const factory SearchNewsSuccessful(final List<News> list) = _$SearchNewsSuccessful;
 
   List<News> get list;
+
   @JsonKey(ignore: true)
-  _$$SearchNewsSuccessfulCopyWith<_$SearchNewsSuccessful> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SearchNewsSuccessfulCopyWith<_$SearchNewsSuccessful> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$SearchNewsErrorCopyWith<$Res> {
-  factory _$$SearchNewsErrorCopyWith(
-          _$SearchNewsError value, $Res Function(_$SearchNewsError) then) =
+  factory _$$SearchNewsErrorCopyWith(_$SearchNewsError value, $Res Function(_$SearchNewsError) then) =
       __$$SearchNewsErrorCopyWithImpl<$Res>;
+
   @useResult
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class __$$SearchNewsErrorCopyWithImpl<$Res>
-    extends _$SearchNewsCopyWithImpl<$Res, _$SearchNewsError>
+class __$$SearchNewsErrorCopyWithImpl<$Res> extends _$SearchNewsCopyWithImpl<$Res, _$SearchNewsError>
     implements _$$SearchNewsErrorCopyWith<$Res> {
-  __$$SearchNewsErrorCopyWithImpl(
-      _$SearchNewsError _value, $Res Function(_$SearchNewsError) _then)
+  __$$SearchNewsErrorCopyWithImpl(_$SearchNewsError _value, $Res Function(_$SearchNewsError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1919,13 +1753,11 @@ class _$SearchNewsError implements SearchNewsError {
         (other.runtimeType == runtimeType &&
             other is _$SearchNewsError &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
@@ -2003,12 +1835,12 @@ class _$SearchNewsError implements SearchNewsError {
 }
 
 abstract class SearchNewsError implements SearchNews {
-  const factory SearchNewsError(
-      final Object error, final StackTrace stackTrace) = _$SearchNewsError;
+  const factory SearchNewsError(final Object error, final StackTrace stackTrace) = _$SearchNewsError;
 
   Object get error;
+
   StackTrace get stackTrace;
+
   @JsonKey(ignore: true)
-  _$$SearchNewsErrorCopyWith<_$SearchNewsError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SearchNewsErrorCopyWith<_$SearchNewsError> get copyWith => throw _privateConstructorUsedError;
 }

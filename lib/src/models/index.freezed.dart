@@ -21,29 +21,32 @@ Torrent _$TorrentFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Torrent {
   String get url => throw _privateConstructorUsedError;
+
   String get quality => throw _privateConstructorUsedError;
+
   String get size => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $TorrentCopyWith<Torrent> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TorrentCopyWith<$Res> {
-  factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) =
-      _$TorrentCopyWithImpl<$Res, Torrent>;
+  factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) = _$TorrentCopyWithImpl<$Res, Torrent>;
+
   @useResult
   $Res call({String url, String quality, String size});
 }
 
 /// @nodoc
-class _$TorrentCopyWithImpl<$Res, $Val extends Torrent>
-    implements $TorrentCopyWith<$Res> {
+class _$TorrentCopyWithImpl<$Res, $Val extends Torrent> implements $TorrentCopyWith<$Res> {
   _$TorrentCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -73,20 +76,17 @@ class _$TorrentCopyWithImpl<$Res, $Val extends Torrent>
 
 /// @nodoc
 abstract class _$$Torrent$CopyWith<$Res> implements $TorrentCopyWith<$Res> {
-  factory _$$Torrent$CopyWith(
-          _$Torrent$ value, $Res Function(_$Torrent$) then) =
-      __$$Torrent$CopyWithImpl<$Res>;
+  factory _$$Torrent$CopyWith(_$Torrent$ value, $Res Function(_$Torrent$) then) = __$$Torrent$CopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call({String url, String quality, String size});
 }
 
 /// @nodoc
-class __$$Torrent$CopyWithImpl<$Res>
-    extends _$TorrentCopyWithImpl<$Res, _$Torrent$>
+class __$$Torrent$CopyWithImpl<$Res> extends _$TorrentCopyWithImpl<$Res, _$Torrent$>
     implements _$$Torrent$CopyWith<$Res> {
-  __$$Torrent$CopyWithImpl(_$Torrent$ _value, $Res Function(_$Torrent$) _then)
-      : super(_value, _then);
+  __$$Torrent$CopyWithImpl(_$Torrent$ _value, $Res Function(_$Torrent$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -115,11 +115,9 @@ class __$$Torrent$CopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$Torrent$ implements Torrent$ {
-  const _$Torrent$(
-      {required this.url, required this.quality, required this.size});
+  const _$Torrent$({required this.url, required this.quality, required this.size});
 
-  factory _$Torrent$.fromJson(Map<String, dynamic> json) =>
-      _$$Torrent$FromJson(json);
+  factory _$Torrent$.fromJson(Map<String, dynamic> json) => _$$Torrent$FromJson(json);
 
   @override
   final String url;
@@ -150,8 +148,7 @@ class _$Torrent$ implements Torrent$ {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Torrent$CopyWith<_$Torrent$> get copyWith =>
-      __$$Torrent$CopyWithImpl<_$Torrent$>(this, _$identity);
+  _$$Torrent$CopyWith<_$Torrent$> get copyWith => __$$Torrent$CopyWithImpl<_$Torrent$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -162,23 +159,23 @@ class _$Torrent$ implements Torrent$ {
 }
 
 abstract class Torrent$ implements Torrent {
-  const factory Torrent$(
-      {required final String url,
-      required final String quality,
-      required final String size}) = _$Torrent$;
+  const factory Torrent$({required final String url, required final String quality, required final String size}) =
+      _$Torrent$;
 
   factory Torrent$.fromJson(Map<String, dynamic> json) = _$Torrent$.fromJson;
 
   @override
   String get url;
+
   @override
   String get quality;
+
   @override
   String get size;
+
   @override
   @JsonKey(ignore: true)
-  _$$Torrent$CopyWith<_$Torrent$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$Torrent$CopyWith<_$Torrent$> get copyWith => throw _privateConstructorUsedError;
 }
 
 AppState _$AppStateFromJson(Map<String, dynamic> json) {
@@ -188,26 +185,35 @@ AppState _$AppStateFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$AppState {
   List<News> get displayNews => throw _privateConstructorUsedError;
+
   List<News> get inMemoryNews => throw _privateConstructorUsedError;
+
   News? get selectedNews => throw _privateConstructorUsedError;
+
   bool get isLoading => throw _privateConstructorUsedError;
+
   int get offset => throw _privateConstructorUsedError;
+
   String get languages => throw _privateConstructorUsedError;
+
   String get categories => throw _privateConstructorUsedError;
+
   String get sources => throw _privateConstructorUsedError;
+
   String get countries => throw _privateConstructorUsedError;
+
   bool get wantRefresh => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
-  $AppStateCopyWith<AppState> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppStateCopyWith<AppState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AppStateCopyWith<$Res> {
-  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
-      _$AppStateCopyWithImpl<$Res, AppState>;
+  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) = _$AppStateCopyWithImpl<$Res, AppState>;
+
   @useResult
   $Res call(
       {List<News> displayNews,
@@ -225,12 +231,12 @@ abstract class $AppStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
-    implements $AppStateCopyWith<$Res> {
+class _$AppStateCopyWithImpl<$Res, $Val extends AppState> implements $AppStateCopyWith<$Res> {
   _$AppStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -307,9 +313,8 @@ class _$AppStateCopyWithImpl<$Res, $Val extends AppState>
 
 /// @nodoc
 abstract class _$$AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory _$$AppState$CopyWith(
-          _$AppState$ value, $Res Function(_$AppState$) then) =
-      __$$AppState$CopyWithImpl<$Res>;
+  factory _$$AppState$CopyWith(_$AppState$ value, $Res Function(_$AppState$) then) = __$$AppState$CopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
@@ -329,12 +334,9 @@ abstract class _$$AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$AppState$CopyWithImpl<$Res>
-    extends _$AppStateCopyWithImpl<$Res, _$AppState$>
+class __$$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res, _$AppState$>
     implements _$$AppState$CopyWith<$Res> {
-  __$$AppState$CopyWithImpl(
-      _$AppState$ _value, $Res Function(_$AppState$) _then)
-      : super(_value, _then);
+  __$$AppState$CopyWithImpl(_$AppState$ _value, $Res Function(_$AppState$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -412,10 +414,10 @@ class _$AppState$ implements AppState$ {
       : _displayNews = displayNews,
         _inMemoryNews = inMemoryNews;
 
-  factory _$AppState$.fromJson(Map<String, dynamic> json) =>
-      _$$AppState$FromJson(json);
+  factory _$AppState$.fromJson(Map<String, dynamic> json) => _$$AppState$FromJson(json);
 
   final List<News> _displayNews;
+
   @override
   @JsonKey()
   List<News> get displayNews {
@@ -425,6 +427,7 @@ class _$AppState$ implements AppState$ {
   }
 
   final List<News> _inMemoryNews;
+
   @override
   @JsonKey()
   List<News> get inMemoryNews {
@@ -467,24 +470,16 @@ class _$AppState$ implements AppState$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AppState$ &&
-            const DeepCollectionEquality()
-                .equals(other._displayNews, _displayNews) &&
-            const DeepCollectionEquality()
-                .equals(other._inMemoryNews, _inMemoryNews) &&
-            (identical(other.selectedNews, selectedNews) ||
-                other.selectedNews == selectedNews) &&
-            (identical(other.isLoading, isLoading) ||
-                other.isLoading == isLoading) &&
+            const DeepCollectionEquality().equals(other._displayNews, _displayNews) &&
+            const DeepCollectionEquality().equals(other._inMemoryNews, _inMemoryNews) &&
+            (identical(other.selectedNews, selectedNews) || other.selectedNews == selectedNews) &&
+            (identical(other.isLoading, isLoading) || other.isLoading == isLoading) &&
             (identical(other.offset, offset) || other.offset == offset) &&
-            (identical(other.languages, languages) ||
-                other.languages == languages) &&
-            (identical(other.categories, categories) ||
-                other.categories == categories) &&
+            (identical(other.languages, languages) || other.languages == languages) &&
+            (identical(other.categories, categories) || other.categories == categories) &&
             (identical(other.sources, sources) || other.sources == sources) &&
-            (identical(other.countries, countries) ||
-                other.countries == countries) &&
-            (identical(other.wantRefresh, wantRefresh) ||
-                other.wantRefresh == wantRefresh));
+            (identical(other.countries, countries) || other.countries == countries) &&
+            (identical(other.wantRefresh, wantRefresh) || other.wantRefresh == wantRefresh));
   }
 
   @JsonKey(ignore: true)
@@ -505,8 +500,7 @@ class _$AppState$ implements AppState$ {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AppState$CopyWith<_$AppState$> get copyWith =>
-      __$$AppState$CopyWithImpl<_$AppState$>(this, _$identity);
+  _$$AppState$CopyWith<_$AppState$> get copyWith => __$$AppState$CopyWithImpl<_$AppState$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -533,28 +527,37 @@ abstract class AppState$ implements AppState {
 
   @override
   List<News> get displayNews;
+
   @override
   List<News> get inMemoryNews;
+
   @override
   News? get selectedNews;
+
   @override
   bool get isLoading;
+
   @override
   int get offset;
+
   @override
   String get languages;
+
   @override
   String get categories;
+
   @override
   String get sources;
+
   @override
   String get countries;
+
   @override
   bool get wantRefresh;
+
   @override
   @JsonKey(ignore: true)
-  _$$AppState$CopyWith<_$AppState$> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AppState$CopyWith<_$AppState$> get copyWith => throw _privateConstructorUsedError;
 }
 
 News _$NewsFromJson(Map<String, dynamic> json) {
@@ -564,26 +567,36 @@ News _$NewsFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$News {
   String? get author => throw _privateConstructorUsedError;
+
   String get title => throw _privateConstructorUsedError;
+
   String get description => throw _privateConstructorUsedError;
+
   String get url => throw _privateConstructorUsedError;
+
   String get source => throw _privateConstructorUsedError;
+
   String? get image => throw _privateConstructorUsedError;
+
   String get category => throw _privateConstructorUsedError;
+
   String get language => throw _privateConstructorUsedError;
+
   String get country => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'published_at')
   String get publishedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $NewsCopyWith<News> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $NewsCopyWith<$Res> {
-  factory $NewsCopyWith(News value, $Res Function(News) then) =
-      _$NewsCopyWithImpl<$Res, News>;
+  factory $NewsCopyWith(News value, $Res Function(News) then) = _$NewsCopyWithImpl<$Res, News>;
+
   @useResult
   $Res call(
       {String? author,
@@ -599,12 +612,12 @@ abstract class $NewsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NewsCopyWithImpl<$Res, $Val extends News>
-    implements $NewsCopyWith<$Res> {
+class _$NewsCopyWithImpl<$Res, $Val extends News> implements $NewsCopyWith<$Res> {
   _$NewsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -669,8 +682,8 @@ class _$NewsCopyWithImpl<$Res, $Val extends News>
 
 /// @nodoc
 abstract class _$$News$CopyWith<$Res> implements $NewsCopyWith<$Res> {
-  factory _$$News$CopyWith(_$News$ value, $Res Function(_$News$) then) =
-      __$$News$CopyWithImpl<$Res>;
+  factory _$$News$CopyWith(_$News$ value, $Res Function(_$News$) then) = __$$News$CopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
@@ -687,10 +700,8 @@ abstract class _$$News$CopyWith<$Res> implements $NewsCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$News$CopyWithImpl<$Res> extends _$NewsCopyWithImpl<$Res, _$News$>
-    implements _$$News$CopyWith<$Res> {
-  __$$News$CopyWithImpl(_$News$ _value, $Res Function(_$News$) _then)
-      : super(_value, _then);
+class __$$News$CopyWithImpl<$Res> extends _$NewsCopyWithImpl<$Res, _$News$> implements _$$News$CopyWith<$Res> {
+  __$$News$CopyWithImpl(_$News$ _value, $Res Function(_$News$) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -802,30 +813,25 @@ class _$News$ implements News$ {
             other is _$News$ &&
             (identical(other.author, author) || other.author == author) &&
             (identical(other.title, title) || other.title == title) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
+            (identical(other.description, description) || other.description == description) &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.source, source) || other.source == source) &&
             (identical(other.image, image) || other.image == image) &&
-            (identical(other.category, category) ||
-                other.category == category) &&
-            (identical(other.language, language) ||
-                other.language == language) &&
+            (identical(other.category, category) || other.category == category) &&
+            (identical(other.language, language) || other.language == language) &&
             (identical(other.country, country) || other.country == country) &&
-            (identical(other.publishedAt, publishedAt) ||
-                other.publishedAt == publishedAt));
+            (identical(other.publishedAt, publishedAt) || other.publishedAt == publishedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, author, title, description, url,
-      source, image, category, language, country, publishedAt);
+  int get hashCode => Object.hash(
+      runtimeType, author, title, description, url, source, image, category, language, country, publishedAt);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$News$CopyWith<_$News$> get copyWith =>
-      __$$News$CopyWithImpl<_$News$>(this, _$identity);
+  _$$News$CopyWith<_$News$> get copyWith => __$$News$CopyWithImpl<_$News$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -837,41 +843,50 @@ class _$News$ implements News$ {
 
 abstract class News$ implements News {
   const factory News$(
-          {required final String? author,
-          required final String title,
-          required final String description,
-          required final String url,
-          required final String source,
-          required final String? image,
-          required final String category,
-          required final String language,
-          required final String country,
-          @JsonKey(name: 'published_at') required final String publishedAt}) =
-      _$News$;
+      {required final String? author,
+      required final String title,
+      required final String description,
+      required final String url,
+      required final String source,
+      required final String? image,
+      required final String category,
+      required final String language,
+      required final String country,
+      @JsonKey(name: 'published_at') required final String publishedAt}) = _$News$;
 
   factory News$.fromJson(Map<String, dynamic> json) = _$News$.fromJson;
 
   @override
   String? get author;
+
   @override
   String get title;
+
   @override
   String get description;
+
   @override
   String get url;
+
   @override
   String get source;
+
   @override
   String? get image;
+
   @override
   String get category;
+
   @override
   String get language;
+
   @override
   String get country;
+
   @override
   @JsonKey(name: 'published_at')
   String get publishedAt;
+
   @override
   @JsonKey(ignore: true)
   _$$News$CopyWith<_$News$> get copyWith => throw _privateConstructorUsedError;
